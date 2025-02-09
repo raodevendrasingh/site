@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/footer";
 
 const outfit = Outfit({
     variable: "--font-outfit",
@@ -35,10 +36,9 @@ export default function RootLayout({
             className={`${inter.className} dark`}
             suppressHydrationWarning
         >
-            <body className="antialiased">
-                <div className="min-h-screen mx-auto max-w-2xl pt-12 md:pt-20 pb-10 px-8">
-                    {children}
-                </div>
+            <body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-20 pb-10 px-8 antialiased">
+                <main className="flex-grow">{children}</main>
+                <Footer />
             </body>
         </html>
     );
