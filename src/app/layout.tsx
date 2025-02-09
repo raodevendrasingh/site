@@ -36,7 +36,7 @@ export default function RootLayout({
             suppressHydrationWarning
         >
             <body className="antialiased">
-                <div className="min-h-screen mx-auto max-w-2xl pt-20 pb-10">
+                <div className="min-h-screen mx-auto max-w-2xl pt-12 md:pt-20 pb-10 px-8">
                     {children}
                 </div>
             </body>
