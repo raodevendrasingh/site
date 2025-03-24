@@ -4,12 +4,30 @@ import localFont from "next/font/local";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 
-const satoshiRegular = localFont({
-    src: "../assets/font/Satoshi-Regular.woff",
-});
-
-const satoshiMedium = localFont({
-    src: "../assets/font/Satoshi-Medium.woff",
+const satoshi = localFont({
+    src: [
+        {
+            path: "../assets/font/Satoshi-Light.woff",
+            weight: "300",
+            style: "normal",
+        },
+        {
+            path: "../assets/font/Satoshi-Regular.woff",
+            weight: "400",
+            style: "normal",
+        },
+        {
+            path: "../assets/font/Satoshi-Medium.woff",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "../assets/font/Satoshi-Bold.woff",
+            weight: "700",
+            style: "normal",
+        },
+    ],
+    variable: "--font-satoshi",
 });
 
 const instrument = Instrument_Serif({
@@ -38,7 +56,7 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={`${instrument.variable} ${satoshiRegular.className} ${satoshiMedium.className} dark`}
+            className={`${instrument.variable} ${satoshi.className} dark`}
             suppressHydrationWarning
         >
             <head>
@@ -62,7 +80,7 @@ export default function RootLayout({
                 <link rel="icon" type="image/icon" href="/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
             </head>
-            <body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-20 pb-8 px-8 antialiased">
+            <body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-16 pb-6 px-8 antialiased">
                 <main className="grow">{children}</main>
                 <Footer />
             </body>

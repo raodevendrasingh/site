@@ -1,14 +1,18 @@
 import { NameTransition } from "@/components/name-transition";
-import { code } from "@/data/code";
+import { projects } from "@/data/projects";
+import React from "react";
+import { ProjectCard } from "@/components/project-card";
+import { building } from "@/data/building";
 import { writing } from "@/data/writing";
-import Link from "next/link";
+import { BlogCard } from "@/components/blog-card";
+import { ContactSection } from "@/components/contact-section";
 
 export default function Home() {
     return (
         <div className="flex flex-col space-y-8">
             <section className="flex flex-col space-y-4">
                 <NameTransition />
-                <p className="text-primary/85 text-balance">
+                <p className="text-primary/85 text-pretty">
                     I'm an engineer, builder, and problem solver. I craft
                     full-stack, production-ready applications with a focus on
                     scalability and performance. I’m always tinkering with new
@@ -18,42 +22,31 @@ export default function Home() {
             </section>
 
             <section className="flex flex-col">
-                <h2 className="font-medium pb-3">Code</h2>
-                <ul className="list-disc pl-5">
-                    {code.map((item) => (
-                        <li key={item.id} className="pb-2">
-                            <Link
-                                href={item.link}
-                                target="_blank"
-                                className="text-primary/75 hover:text-primary transition-colors"
-                            >
-                                {item.title}
-                                {item.comments && (
-                                    <span className="pl-1 text-sm text-primary/60 italic">
-                                        ({item.comments})
-                                    </span>
-                                )}
-                            </Link>
-                        </li>
+                <h2 className="font-semibold pb-3">Building</h2>
+                <div className="flex flex-col gap-3">
+                    {building.map((item) => (
+                        <ProjectCard key={item.id} project={item} />
                     ))}
-                </ul>
+                </div>
             </section>
 
             <section className="flex flex-col">
-                <h2 className="font-medium pb-3">Writing</h2>
-                <ul className="list-disc pl-5">
-                    {writing.map((item) => (
-                        <li key={item.id} className="pb-2">
-                            <Link
-                                href={item.link}
-                                className="text-primary/75 hover:text-primary transition-colors"
-                            >
-                                {item.title}
-                            </Link>
-                        </li>
+                <h2 className="font-semibold pb-3">Projects</h2>
+                <div className="flex flex-col gap-3">
+                    {projects.map((item) => (
+                        <ProjectCard key={item.id} project={item} />
                     ))}
-                </ul>
+                </div>
             </section>
+
+            {/* <section className="flex flex-col">
+                <h2 className="font-semibold pb-3">Writing</h2>
+                {writing.map((item) => (
+                    <BlogCard key={item.id} blog={item} />
+                ))}
+            </section> */}
+
+            <ContactSection />
         </div>
     );
 }
