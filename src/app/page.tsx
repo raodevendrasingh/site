@@ -20,8 +20,8 @@ export default function Home() {
             <section className="flex flex-col">
                 <h2 className="font-medium pb-3">Code</h2>
                 <ul className="list-disc pl-5">
-                    {code.map((item, index) => (
-                        <li key={index} className="pb-2">
+                    {code.map((item) => (
+                        <li key={item.id} className="pb-2">
                             <Link
                                 href={item.link}
                                 target="_blank"
@@ -42,8 +42,8 @@ export default function Home() {
             <section className="flex flex-col">
                 <h2 className="font-medium pb-3">Writing</h2>
                 <ul className="list-disc pl-5">
-                    {writing.map((item, index) => (
-                        <li key={index} className="pb-2">
+                    {writing.map((item) => (
+                        <li key={item.id} className="pb-2">
                             <Link
                                 href={item.link}
                                 className="text-primary/75 hover:text-primary transition-colors"

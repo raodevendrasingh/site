@@ -20,8 +20,9 @@ export function NameTransition() {
                         {Array.from("Devendra Singh Rao").map(
                             (letter, index) => (
                                 <span
+                                    // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                                     key={index}
-                                    className="inline-block"
+                                    className="inline-block font-instrument text-4xl font-medium"
                                     style={{
                                         transitionDelay: `${index * 25}ms`,
                                         opacity: isPending ? 0 : 1,
@@ -33,11 +34,12 @@ export function NameTransition() {
                         )}
                     </span>
                     <span
-                        className="inline-block absolute left-0 top-0 transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0"
+                        className="inline-block absolute left-0 top-2 transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0"
                         style={{ viewTransitionName: "name-bottom" }}
                     >
                         {Array.from("raodevendrasingh").map((letter, index) => (
                             <span
+                                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                                 key={index}
                                 className="inline-block"
                                 style={{

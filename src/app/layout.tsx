@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Instrument_Serif } from "next/font/google";
+import localFont from "next/font/local";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 
-const outfit = Outfit({
-    variable: "--font-outfit",
+const satoshiRegular = localFont({
+    src: "../assets/font/Satoshi-Regular.woff",
+});
+
+const satoshiMedium = localFont({
+    src: "../assets/font/Satoshi-Medium.woff",
+});
+
+const instrument = Instrument_Serif({
+    variable: "--font-instrument",
     subsets: ["latin"],
+    weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +38,7 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={`${outfit.className} dark`}
+            className={`${instrument.variable} ${satoshiRegular.className} ${satoshiMedium.className} dark`}
             suppressHydrationWarning
         >
             <head>
