@@ -53,7 +53,7 @@ export default function RootLayout({
                 <link rel="manifest" href="/manifest.json" />
             </head>
             <body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-20 pb-8 px-8 antialiased">
-                <main className="flex-grow">{children}</main>
+                <main className="grow">{children}</main>
                 <Footer />
             </body>
         </html>
