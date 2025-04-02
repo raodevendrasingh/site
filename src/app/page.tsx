@@ -33,9 +33,11 @@ export default function Home() {
             <section className="flex flex-col">
                 <h2 className="font-semibold pb-3">Projects</h2>
                 <div className="flex flex-col gap-3">
-                    {projects.map((item) => (
-                        <ProjectCard key={item.id} project={item} />
-                    ))}
+                    {projects
+                        .filter((item) => item.show)
+                        .map((item) => (
+                            <ProjectCard key={item.id} project={item} />
+                        ))}
                 </div>
             </section>
 

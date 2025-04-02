@@ -34,7 +34,7 @@ export function NameTransition() {
                         )}
                     </span>
                     <span
-                        className="inline-block absolute left-0 top-2 transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0"
+                        className="inline-block absolute left-0 top-2.5 transition-transform duration-300 ease-in-out translate-y-full group-hover:translate-y-0"
                         style={{ viewTransitionName: "name-bottom" }}
                     >
                         {Array.from("raodevendrasingh").map((letter, index) => (
