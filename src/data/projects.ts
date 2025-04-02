@@ -5,6 +5,7 @@ export const projects = [
         description: "A CLI tool to converse with popular LLMs via terminal.",
         link: "https://github.com/raodevendrasingh/voltx",
         show: true,
+        year: "2025",
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ export const projects = [
         description: "RAG based chat application.",
         link: "https://github.com/raodevendrasingh/intelliseek",
         show: false,
+        year: "2025",
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ export const projects = [
         description: "Job Listing and candidate management portal.",
         link: "https://github.com/raodevendrasingh/gradhunt",
         show: true,
+        year: "2024",
     },
     {
         id: 4,
@@ -27,5 +30,6 @@ export const projects = [
             "Testimonial collection platform and convert them into ready-to-use react components.",
         link: "https://github.com/raodevendrasingh/remonial",
         show: true,
+        year: "2024",
     },
 ];

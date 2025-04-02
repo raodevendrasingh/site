@@ -4,5 +4,6 @@ export const building = [
         title: "airtheon",
         description: "AI-powered personal memory assistant app.",
         link: "https://github.com/airtheonlabs",
+        year: "2025",
     },
 ];
