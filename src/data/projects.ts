@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: "voltx",
-        description: "A CLI tool to converse with popular LLMs via terminal.",
+        description: "A CLI tool to supercharge your terminal with Native AI.",
         link: "https://github.com/raodevendrasingh/voltx",
         show: true,
         year: "2025",

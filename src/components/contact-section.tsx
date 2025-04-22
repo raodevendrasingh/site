@@ -6,7 +6,7 @@ export const ContactSection = () => {
         <section className="flex flex-col">
             <h2 className="font-semibold pb-3">Contact</h2>
             <p className="text-primary/75 px-3 space-x-1 leading-7">
-                reach me on{" "}
+                Reach me on{" "}
                 <Link
                     href="https://x.com/tminusdev"
                     className="underline underline-offset-4 hover:text-primary"
@@ -15,7 +15,7 @@ export const ContactSection = () => {
                 >
                     X
                 </Link>
-                {" · "}
+                {" / "}
                 <Link
                     href="https://github.com/raodevendrasingh"
                     className="underline underline-offset-4 hover:text-primary"
@@ -24,7 +24,7 @@ export const ContactSection = () => {
                 >
                     GitHub
                 </Link>
-                {" · "}
+                {" / "}
                 <Link
                     href="https://linkedin.com/in/raodevendrasingh"
                     className="underline underline-offset-4 hover:text-primary"
@@ -32,6 +32,15 @@ export const ContactSection = () => {
                     rel="noopener noreferrer"
                 >
                     LinkedIn
+                </Link>
+                {" / "}
+                <Link
+                    href="https://peerlist.io/devendrasingh"
+                    className="underline underline-offset-4 hover:text-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Peerlist
                 </Link>
                 {" – or drop an email at "}
                 <Link
