@@ -15,9 +15,14 @@ export default function Home() {
                 <p className="text-primary/85 text-pretty">
                     I'm an engineer, builder, and problem solver. I craft
                     full-stack, production-ready applications with a focus on
-                    scalability and performance. I’m always tinkering with new
+                    scalability and performance. I'm always tinkering with new
                     tech or working on side projects that solve problems I care
                     about.
+                </p>
+                <p className="text-primary/85 text-pretty">
+                    I am currently exploring full-time roles where I can
+                    leverage my skills, passion, and dedication to deliver
+                    high-quality outcomes and advance your team's objectives.
                 </p>
             </section>
 

@@ -2,8 +2,9 @@ export const building = [
     {
         id: 1,
         title: "airtheon",
-        description: "AI-powered context-aware personal assistant.",
-        link: "https://github.com/airtheonlabs",
+        description:
+            "An AI-native workspace that connects your tools, stores context, and helps you take action with natural language.",
+        link: "https://github.com/airtheonhq",
         year: "2025",
     },
 ];
