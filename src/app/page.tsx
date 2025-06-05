@@ -5,7 +5,9 @@ import { ProjectCard } from "@/components/project-card";
 import { building } from "@/data/building";
 import { writing } from "@/data/writing";
 import { BlogCard } from "@/components/blog-card";
-import { ContactSection } from "@/components/contact-section";
+import { contactList } from "@/data/contact-list";
+import { ContactItem } from "@/components/contact-item";
+import { MailBox } from "@/components/mail-box";
 
 export default function Home() {
     return (
@@ -26,8 +28,10 @@ export default function Home() {
                 </p>
             </section>
 
-            <section className="flex flex-col">
-                <h2 className="font-semibold pb-3">Building</h2>
+            <section className="flex flex-col space-y-3">
+                <h2 className="font-instrument tracking-wider text-2xl">
+                    currently building.
+                </h2>
                 <div className="flex flex-col gap-3">
                     {building.map((item) => (
                         <ProjectCard key={item.id} project={item} />
@@ -35,8 +39,10 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex flex-col">
-                <h2 className="font-semibold pb-3">Projects</h2>
+            <section className="flex flex-col space-y-3">
+                <h2 className="font-instrument tracking-wider text-2xl">
+                    previously built.
+                </h2>
                 <div className="flex flex-col gap-3">
                     {projects
                         .filter((item) => item.show)
@@ -46,14 +52,34 @@ export default function Home() {
                 </div>
             </section>
 
+            <section className="flex flex-col w-full space-y-3">
+                <h2 className="font-instrument tracking-wider text-2xl">
+                    contact.
+                </h2>
+                <div className="flex flex-col gap-2 px-3">
+                    <div className="flex flex-col gap-2">
+                        <p>connect with me on — </p>
+                        <span className="flex flex-wrap gap-3">
+                            {contactList.map((contact, index) => (
+                                <ContactItem key={index} item={contact} />
+                            ))}
+                        </span>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <p>OR drop an email at — </p>
+                        <span className="flex flex-wrap gap-3">
+                            <MailBox text="hello@raodevendrasingh.com" />
+                        </span>
+                    </div>
+                </div>
+            </section>
+
             {/* <section className="flex flex-col">
                 <h2 className="font-semibold pb-3">Writing</h2>
                 {writing.map((item) => (
                     <BlogCard key={item.id} blog={item} />
                 ))}
             </section> */}
-
-            <ContactSection />
         </div>
     );
 }
