@@ -68,7 +68,7 @@ export default function Home() {
                     <div className="flex flex-col gap-2">
                         <p>OR drop an email at — </p>
                         <span className="flex flex-wrap gap-3">
-                            <MailBox text="hello@raodevendrasingh.com" />
+                            <MailBox text="contact@raodevendrasingh.com" />
                         </span>
                     </div>
                 </div>
