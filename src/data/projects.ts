@@ -9,14 +9,6 @@ export const projects = [
     },
     {
         id: 2,
-        title: "intelliseek",
-        description: "RAG based chat application.",
-        link: "https://github.com/raodevendrasingh/intelliseek",
-        show: false,
-        year: "2025",
-    },
-    {
-        id: 3,
         title: "gradhunt",
         description: "Job Listing and candidate management portal.",
         link: "https://github.com/raodevendrasingh/gradhunt",
@@ -24,10 +16,10 @@ export const projects = [
         year: "2024",
     },
     {
-        id: 4,
+        id: 3,
         title: "remonial",
         description:
-            "Testimonial collection platform and convert them into ready-to-use react components.",
+            "Collect testimonials and export them as ready-to-use react components.",
         link: "https://github.com/raodevendrasingh/remonial",
         show: true,
         year: "2024",

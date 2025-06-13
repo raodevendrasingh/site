@@ -11,7 +11,7 @@ import { MailBox } from "@/components/mail-box";
 
 export default function Home() {
     return (
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col space-y-12">
             <section className="flex flex-col space-y-4">
                 <NameTransition />
                 <p className="text-primary/85 text-pretty">
@@ -39,7 +39,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="flex flex-col space-y-3">
+            <section className="relative flex flex-col space-y-3">
                 <h2 className="font-instrument tracking-wider text-2xl">
                     previously built.
                 </h2>
@@ -56,17 +56,24 @@ export default function Home() {
                 <h2 className="font-instrument tracking-wider text-2xl">
                     contact.
                 </h2>
-                <div className="flex flex-col gap-2 px-3">
+                <div className="flex flex-col gap-4 px-3">
                     <div className="flex flex-col gap-2">
-                        <p>connect with me on — </p>
-                        <span className="flex flex-wrap gap-3">
+                        <p>Connect with me on —</p>
+                        <span className="flex flex-wrap gap-3 md:flex-nowrap">
                             {contactList.map((contact, index) => (
-                                <ContactItem key={index} item={contact} />
+                                <div
+                                    key={index}
+                                    // className="w-[calc(50%-0.375rem)] md:w-auto"
+                                >
+                                    <ContactItem item={contact} />
+                                </div>
                             ))}
                         </span>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <p>OR drop an email at — </p>
+                        <p>
+                            <em>or</em> feel free to email me at —{" "}
+                        </p>
                         <span className="flex flex-wrap gap-3">
                             <MailBox text="contact@raodevendrasingh.com" />
                         </span>

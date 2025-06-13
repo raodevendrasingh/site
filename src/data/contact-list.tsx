@@ -12,22 +12,22 @@ export type ContactType = {
 
 export const contactList: ContactType[] = [
     {
-        icon: <Github size={20} />,
+        icon: <Github size={16} />,
         title: "Github",
         href: "https://github.com/raodevendrasingh",
     },
     {
-        icon: <TwitterX size={20} />,
+        icon: <TwitterX size={16} />,
         title: "Twitter",
         href: "https://x.com/tminusdev",
     },
     {
-        icon: <Peerlist size={20} />,
+        icon: <Peerlist size={16} />,
         title: "Peerlist",
         href: "https://peerlist.io/devendrasingh",
     },
     {
-        icon: <LinkedIn size={20} />,
+        icon: <LinkedIn size={16} />,
         title: "LinkedIn",
         href: "https://linkedin.com/in/raodevendrasingh",
     },

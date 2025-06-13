@@ -9,7 +9,7 @@ export type ContactProps = {
 
 export const ContactItem = ({ item }: ContactProps) => {
     return (
-        <Badge variant="secondary" className="py-1 rounded-lg">
+        <Badge variant="secondary" className="py-1 rounded-full w-full">
             <Link
                 href={item.href}
                 className="flex items-center gap-2 text-primary/85 hover:text-primary bg-transparent shadow-none transition-colors duration-200"
@@ -17,10 +17,10 @@ export const ContactItem = ({ item }: ContactProps) => {
                 rel="noopener noreferrer"
             >
                 {item.icon}
-                <span className="font-medium text-sm tracking-wide">
+                <span className="hidden md:block font-medium text-sm tracking-wide">
                     {item.title}
                 </span>
-                <ArrowUpRight size={16} />
+                <ArrowUpRight size={16} className="hidden md:block" />
             </Link>
         </Badge>
     );

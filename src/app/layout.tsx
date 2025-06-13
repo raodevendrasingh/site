@@ -80,7 +80,7 @@ export default function RootLayout({
                 <link rel="icon" type="image/icon" href="/favicon.ico" />
                 <link rel="manifest" href="/manifest.json" />
             </head>
-            <body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-16 pb-6 px-8 antialiased">
+            <body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-16 px-8 antialiased">
                 <main className="grow">{children}</main>
                 <Footer />
             </body>
