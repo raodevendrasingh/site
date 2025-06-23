@@ -3,7 +3,7 @@ export const building = [
         id: 1,
         title: "airtheon",
         description:
-            "AI-powered workspace to organize your context, connect external tools, and get tasks done through natural language.",
+            "AI copilot for your brain - save, connect, and act through conversation.",
         link: "https://github.com/airtheonhq",
         year: "2025",
     },
