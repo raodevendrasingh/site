@@ -9,17 +9,24 @@ import { projects } from "@/data/projects";
 export default function Home() {
 	return (
 		<div className="flex flex-col space-y-12">
-			<section className="flex flex-col space-y-4">
+			<section className="flex flex-col space-y-2">
 				<NameTransition />
-				<p className="text-primary/85 text-pretty">
-					I'm an engineer, builder, and problem solver. I craft full-stack, production-ready
-					applications with a focus on scalability and performance. I'm always tinkering with new
-					tech or working on side projects that solve problems I care about.
-				</p>
-				<p className="text-primary/85 text-pretty">
-					I am currently exploring full-time roles where I can leverage my skills, passion, and
-					dedication to deliver high-quality outcomes and advance your team's objectives.
-				</p>
+				<div className="flex flex-col gap-5">
+					<h3 className="text-primary/90 text-pretty font-medium">
+						programmer • systems thinker • generalist
+					</h3>
+					<div className="flex flex-col gap-2">
+						<p className="text-primary/85 text-pretty">
+							I'm an engineer, builder, and problem solver. I craft full-stack, production-grade
+							systems with a focus on performance, scalability, and clean abstractions. I'm always
+							tinkering with new tech or working on side projects that solve problems I care about.
+						</p>
+						<p className="text-primary/85 text-pretty">
+							I'm open to full-time opportunities where I can bring my engineering instincts,
+							attention to detail, and drive to build things that actually matter.
+						</p>
+					</div>
+				</div>
 			</section>
 
 			<section className="flex flex-col space-y-3">

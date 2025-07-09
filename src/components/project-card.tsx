@@ -6,6 +6,7 @@ interface Project {
 	id: number;
 	title: string;
 	description: string;
+	stack?: string[];
 	link: string;
 	tag?: string;
 	year?: string;
@@ -16,7 +17,7 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
-	const { id, title, description, link, year } = project;
+	const { id, title, description, stack, link, year } = project;
 
 	return (
 		<div key={id} className="group relative px-3 py-2 hover:bg-accent/40">
@@ -46,7 +47,8 @@ export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
 			>
 				<div className="flex flex-col gap-1">
 					<span className="font-medium text-primary/95">{title}</span>
-					<span className="text-primary/75">{description}</span>
+					<span className="text-primary/80">{description}</span>
+					<span className="text-primary/60 text-sm">{stack?.join(" / ")}</span>
 				</div>
 				<div className="relative flex flex-col items-center gap-2 justify-between pl-4">
 					<ArrowUpRight
