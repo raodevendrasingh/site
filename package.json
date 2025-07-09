@@ -1,34 +1,37 @@
 {
-    "name": "site",
-    "version": "0.2.0",
-    "private": true,
-    "scripts": {
-        "dev": "npm run format && next dev --turbopack",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "format": "prettier --write . --log-level silent"
-    },
-    "dependencies": {
-        "@radix-ui/react-slot": "^1.2.3",
-        "class-variance-authority": "^0.7.1",
-        "clsx": "^2.1.1",
-        "lucide-react": "^0.513.0",
-        "motion": "^12.16.0",
-        "next": "15.3.3",
-        "prettier": "^3.5.3",
-        "react": "^19.1.0",
-        "react-dom": "^19.1.0",
-        "tailwind-merge": "^3.3.0",
-        "tailwindcss-animate": "^1.0.7"
-    },
-    "devDependencies": {
-        "@tailwindcss/postcss": "^4.1.8",
-        "@types/node": "^22.15.29",
-        "@types/react": "^19.1.6",
-        "@types/react-dom": "^19.1.6",
-        "postcss": "^8.5.4",
-        "tailwindcss": "^4.1.8",
-        "typescript": "^5.8.3"
-    }
+	"name": "site",
+	"version": "0.2.0",
+	"private": true,
+	"scripts": {
+		"dev": "npm run format && next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "biome lint --max-diagnostics=100",
+		"check": "biome check --max-diagnostics=100",
+		"check:write": "biome check --write --max-diagnostics=100",
+		"format": "biome format --write --max-diagnostics=100"
+	},
+	"dependencies": {
+		"@radix-ui/react-slot": "^1.2.3",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.513.0",
+		"motion": "^12.16.0",
+		"next": "15.3.3",
+		"prettier": "^3.5.3",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"tailwind-merge": "^3.3.0",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.1.1",
+		"@tailwindcss/postcss": "^4.1.8",
+		"@types/node": "^22.15.29",
+		"@types/react": "^19.1.6",
+		"@types/react-dom": "^19.1.6",
+		"postcss": "^8.5.4",
+		"tailwindcss": "^4.1.8",
+		"typescript": "^5.8.3"
+	}
 }

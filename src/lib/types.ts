@@ -1,3 +1,3 @@
 export interface SVGIconProps {
-    size?: number;
+	size?: number;
 }
