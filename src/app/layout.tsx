@@ -42,10 +42,34 @@ export const metadata: Metadata = {
 		canonical: "/",
 	},
 	title: {
-		default: "Devendra Singh",
-		template: "%s | Devendra Singh",
+		default: "Devendra Singh Rao",
+		template: "%s | Devendra Singh Rao",
 	},
-	description: "Full-stack engineer | Tech enthusiast",
+	description: "programmer • systems thinker • generalist",
+	openGraph: {
+		title: "Devendra Singh Rao",
+		description: "programmer • systems thinker • generalist",
+		url: "https://raodevendrasingh.com",
+		siteName: "Devendra Singh Rao",
+		images: [
+			{
+				url: "/api/og?title=Devendra%20Singh%20Rao&subtitle=programmer%20%E2%80%A2%20systems%20thinker%20%E2%80%A2%20generalist&type=portfolio",
+				width: 1200,
+				height: 630,
+				alt: "Devendra Singh Rao - programmer • systems thinker • generalist",
+			},
+		],
+		locale: "en_US",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: "Devendra Singh Rao",
+		description: "programmer • systems thinker • generalist",
+		images: [
+			"/api/og?title=Devendra%20Singh%20Rao&subtitle=programmer%20%E2%80%A2%20systems%20thinker%20%E2%80%A2%20generalist&type=portfolio",
+		],
+	},
 };
 
 export default function RootLayout({
