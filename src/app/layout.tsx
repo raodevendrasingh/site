@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Instrument_Serif } from "next/font/google";
+import { Hanken_Grotesk, Instrument_Serif } from "next/font/google";
 import localFont from "next/font/local";
 import { Footer } from "@/components/footer";
 import "./globals.css";
@@ -34,6 +34,12 @@ const instrument = Instrument_Serif({
 	variable: "--font-instrument",
 	subsets: ["latin"],
 	weight: "400",
+});
+
+const hanken = Hanken_Grotesk({
+	variable: "--font-hanken",
+	subsets: ["latin"],
+	weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -80,7 +86,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang="en"
-			className={`${instrument.variable} ${satoshi.className} dark`}
+			className={`${instrument.variable} ${hanken.variable} dark`}
 			suppressHydrationWarning
 		>
 			<head>
