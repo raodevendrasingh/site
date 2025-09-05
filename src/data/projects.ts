@@ -19,10 +19,10 @@ export const projects = [
 	},
 	{
 		id: 3,
-		title: "remonial",
+		title: "testimo",
 		description: "Collect testimonials and export them as ready-to-use react components.",
 		stack: ["nextjs", "typescript", "tailwind", "mongodb", "next-auth"],
-		link: "https://github.com/raodevendrasingh/remonial",
+		link: "https://github.com/raodevendrasingh/testimo",
 		show: true,
 		year: "2024",
 	},
