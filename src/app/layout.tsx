@@ -3,6 +3,8 @@ import { Hanken_Grotesk, Instrument_Serif } from "next/font/google";
 import localFont from "next/font/local";
 import { Footer } from "@/components/footer";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const satoshi = localFont({
 	src: [
@@ -99,6 +101,8 @@ export default function RootLayout({
 			<body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-16 px-6 antialiased">
 				<main className="grow">{children}</main>
 				<Footer />
+				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	);
