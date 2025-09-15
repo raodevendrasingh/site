@@ -98,7 +98,7 @@ export default function RootLayout({
 				<link rel="icon" type="image/icon" href="/favicon.ico" />
 				<link rel="manifest" href="/manifest.json" />
 			</head>
-			<body className="min-h-screen flex flex-col mx-auto max-w-2xl pt-12 md:pt-16 px-6 antialiased">
+			<body className="min-h-screen flex flex-col mx-auto max-w-3xl pt-12 md:pt-16 antialiased border-x">
 				<main className="grow">{children}</main>
 				<Footer />
 				<Analytics />
